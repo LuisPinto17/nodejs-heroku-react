@@ -22,12 +22,16 @@ class App extends Component {
   render() {
     return (
       <Router>
-      <div className="container">
+        <div className="container">
 
-      <Navbar />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/social" component={Social} />
-      )
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/social" component={Social} />
+
+          <Footer />
+          </div>
+      </Router>
+      );
   }
 }
 
