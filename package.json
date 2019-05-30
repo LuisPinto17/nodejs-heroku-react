@@ -1,0 +1,24 @@
+{
+  "name": "alvaro",
+  "version": "1.0.0",
+  "description": "Test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almiavicas/nodejs-heroku-react.git"
+  },
+  "author": "alvaro (almiavicas@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almiavicas/nodejs-heroku-react/issues"
+  },
+  "homepage": "https://github.com/almiavicas/nodejs-heroku-react#readme",
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "client": "0.0.1",
+    "create-react-app": "^3.0.1"
+  }
+}
