@@ -26,6 +26,18 @@ export default class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+
+    fetch('/profiles/:username', {
+    	method: 'GET',
+    	data: {
+    		username: this.state.email,
+    		password: this.state.password
+    	}
+    }).then(function(response) {
+    	return response.json()
+    }).then(function(body) {
+    	console.log(body);
+    });
   }
 
   render() {
