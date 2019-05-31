@@ -1,6 +1,8 @@
 @media all and (min-width: 480px) {
   .Login {
     padding: 60px 0;
+    background: url("../img/ws_Electricity_Pole_Perspective_2560x1600.jpg") no-repeat center top;
+    background-size: cover;
   }
 
   .Login form {
