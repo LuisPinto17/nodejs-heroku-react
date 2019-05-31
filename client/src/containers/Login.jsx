@@ -9,13 +9,13 @@ export default class Login extends Component {
     super(props);
 
     this.state = {
-      email: "",
+      username: "",
       password: ""
     };
   }
 
   validateForm() {
-    return this.state.email.length > 0 && this.state.password.length > 7;
+    return this.state.username.length > 0 && this.state.password.length > 7;
   }
 
   handleChange = event => {
@@ -29,8 +29,8 @@ export default class Login extends Component {
 
     fetch('/profiles/:username', {
     	method: 'GET',
-    	data: {
-    		username: this.state.email,
+    	params: {
+    		username: this.state.username,
     		password: this.state.password
     	}
     }).then(function(response) {
@@ -44,14 +44,14 @@ export default class Login extends Component {
     return (
       <div className="Login">
         	<Form onSubmit={this.handleSubmit}>
-          		<Form.Group controlId="email" bsSize="large">
+          		<Form.Group controlId="username" bsSize="large">
           			<h2>Username</h2>
             		<Form.Control
               		autoFocus
-              		type="email"
-	  	            value={this.state.email}
+              		type="text"
+	  	            value={this.state.username}
               		onChange={this.handleChange}
-              		placeholder="Enter your Email" />
+              		placeholder="Enter your username" />
           		</Form.Group>
           		<Form.Group controlId="password" bsSize="large">
             		<h2>Password</h2>
