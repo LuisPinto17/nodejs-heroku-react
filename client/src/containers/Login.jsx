@@ -39,7 +39,7 @@ export default class Login extends Component {
               value={this.state.email}
               onChange={this.handleChange}
             />
-          </FormGroup>
+          </Form.Group>
           <Form.Group controlId="password" bsSize="large">
             
             <Form.Control
