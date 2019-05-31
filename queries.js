@@ -1,4 +1,5 @@
 const Pool = require('pg').Pool
+// Informacion de usuario de base de datos
 const pool = new Pool({
 	user: 'sxbtxaggihuyvu',
 	host: 'ec2-54-225-72-238.compute-1.amazonaws.com',

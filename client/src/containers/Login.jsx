@@ -27,6 +27,7 @@ export default class Login extends Component {
   handleSubmit = event => {
     event.preventDefault();
 
+    // Envia info a la base de datos
     fetch('/profiles/:username', {
     	method: 'GET',
     	params: {
