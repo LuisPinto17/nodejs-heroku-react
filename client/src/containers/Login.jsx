@@ -31,36 +31,29 @@ export default class Login extends Component {
   render() {
     return (
       <div className="Login">
-        <img class="avatar" src="../img/High_voltage_warning.svg.png">
-        <h1>Login Here</h1>
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Group controlId="email" bsSize="large">
-            <Form.Control
-              autoFocus
-              type="email"
-              value={this.state.email}
-              onChange={this.handleChange}
-              placeholder="Enter your Email"
-            />
-          </Form.Group>
-          <Form.Group controlId="password" bsSize="large">
+        	<Form onSubmit={this.handleSubmit}>
+          		<Form.Group controlId="email" bsSize="large">
+            		<Form.Control
+              		autoFocus
+              		type="email"
+	  	            value={this.state.email}
+              		onChange={this.handleChange}
+              		placeholder="Enter your Email" />
+          		</Form.Group>
+          		<Form.Group controlId="password" bsSize="large">
             
-            <Form.Control
-              value={this.state.password}
-              onChange={this.handleChange}
-              type="password"
-              placeholder="Enter your password"
-            />
-          </Form.Group>
-          <Button
-            block
-            bsSize="large"
-            disabled={!this.validateForm()}
-            type="submit"
-          >
-            Login
-          </Button>
-        </Form>
+            		<Form.Control
+              		value={this.state.password}
+              		onChange={this.handleChange}
+              		type="password"
+              		placeholder="Enter your password" />
+          		</Form.Group>
+          		<Button
+            	block
+            	bsSize="large"
+            	disabled={!this.validateForm()}
+            	type="submit">Login</Button>
+        	</Form>
       </div>
     );
   }
