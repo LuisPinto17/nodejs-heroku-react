@@ -25,6 +25,10 @@ app.get('/', (req, res) => {
 	res.send('root route');
 })
 
+app.get('/profile', db.getProfiles)
+app.get('/profile/:username', db.getProfileByUsername)
+app.post('/profile', db.createProfile)
+
 // Start server
 app.listen(port, (req, res) => {
 	console.log(`server listening on port: ${port}`)
