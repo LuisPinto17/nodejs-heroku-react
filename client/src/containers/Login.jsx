@@ -34,7 +34,7 @@ export default class Login extends Component {
     		password: this.state.password
     	}
     }).then(function(response) {
-    	return response.json()
+    	return response
     }).then(function(body) {
     	console.log(body);
     });
