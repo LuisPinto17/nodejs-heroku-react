@@ -10,6 +10,7 @@ function App() {
       <div>
         <Route exact path="/" component = {Login}/>
         <Route path="login" component = {Login}/>
+      </div>
     </Router>
 
 
