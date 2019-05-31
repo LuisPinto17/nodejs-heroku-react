@@ -31,7 +31,7 @@ export default class Login extends Component {
   render() {
     return (
       <div className="Login">
-        <form onSubmit={this.handleSubmit}>
+        <Form onSubmit={this.handleSubmit}>
           <Form.Group controlId="email" bsSize="large">
             <Form.Control
               autoFocus
@@ -47,7 +47,7 @@ export default class Login extends Component {
               onChange={this.handleChange}
               type="password"
             />
-          </FormGroup>
+          </Form.Group>
           <Button
             block
             bsSize="large"
