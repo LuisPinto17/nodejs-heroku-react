@@ -33,6 +33,7 @@ export default class Login extends Component {
       <div className="Login">
         	<Form onSubmit={this.handleSubmit}>
           		<Form.Group controlId="email" bsSize="large">
+          			<h2>Username</h2>
             		<Form.Control
               		autoFocus
               		type="email"
@@ -41,7 +42,7 @@ export default class Login extends Component {
               		placeholder="Enter your Email" />
           		</Form.Group>
           		<Form.Group controlId="password" bsSize="large">
-            
+            		<h2>Password</h2>
             		<Form.Control
               		value={this.state.password}
               		onChange={this.handleChange}
